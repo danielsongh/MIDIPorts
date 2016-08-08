@@ -17,25 +17,14 @@ void myReadProc                 (const MIDIPacketList *packetList,
                                  void* readProcRefCon,
                                  void* srcConnRefCon);
 
-MIDIPortRef gMidiout;  // MIDI output has to be global
-
-// because initialization function for
-// MIDI output and the MIDI input callback
-// function cannot talk to each other
-// directly.  So the MIDI input callback
-// should check to see if the output
-// is valid (not NULL) before it starts
-// trying to use gMidiout.
-
+MIDIPortRef gMidiout;
 
 
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+    
         
-        // Prepare MIDI Interface Client/Port for writing MIDI data:
         MIDIClientRef midiclient;
         MIDIPortRef   midiin;
         OSStatus status;
