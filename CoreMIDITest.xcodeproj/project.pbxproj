@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5CB7C5AD1CA3670900DD850E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB7C5AC1CA3670900DD850E /* main.m */; };
+		5CB7C5B41CA3672800DD850E /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CB7C5B31CA3672800DD850E /* CoreMIDI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		5CB7C5A91CA3670900DD850E /* CoreMIDITest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CoreMIDITest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CB7C5AC1CA3670900DD850E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5CB7C5B31CA3672800DD850E /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CB7C5B41CA3672800DD850E /* CoreMIDI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +44,7 @@
 		5CB7C5A01CA3670900DD850E = {
 			isa = PBXGroup;
 			children = (
+				5CB7C5B31CA3672800DD850E /* CoreMIDI.framework */,
 				5CB7C5AB1CA3670900DD850E /* CoreMIDITest */,
 				5CB7C5AA1CA3670900DD850E /* Products */,
 			);
